@@ -24,22 +24,23 @@ CREATE TABLE type (
 	CONSTRAINT fk_id FOREIGN KEY(category_id) REFERENCES category (id)
 ) ENGINE = INNODB;
 
-CREATE TABLE materials (
+CREATE TABLE material (
 	id INT AUTO_INCREMENT NOT NULL,
 	type_id INT NOT NULL,
+	category_id INT NOT NULL,
 	model VARCHAR(32) NOT NULL,
 	footprint VARCHAR(32),
 	vendor VARCHAR(32),
-	package VARCHAR(32),
+	packing VARCHAR(32),
 	modelType VARCHAR(32),
-	purchasing_date date;
+	purchasing_date date,
 	storage INT NOT NULL,
 	unit_price DECIMAL,
 	delivery INT,
 	guide VARCHAR(2000),
 	remark VARCHAR(128),
-	CONSTRAINT pk_id PRIMARY KEY(id, type_id),
-	CONSTRAINT fk_id FOREIGN KEY(type_id) REFERENCES
-	type(id)
+	CONSTRAINT m_pk_id PRIMARY KEY(id, type_id, category_id),
+	CONSTRAINT m_fk_id FOREIGN KEY(type_id, category_id) REFERENCES
+	type(id, category_id)
 	
 ) ENGINE = INNODB

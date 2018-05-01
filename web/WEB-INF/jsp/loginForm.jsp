@@ -139,7 +139,7 @@
             </div>
         </div>
         <div class="page-footer" style="color: #fff">
-            兼容浏览器IE8+，最佳分辨率1280*800. <br>2018 @ SequoiaTech物料管理系统
+            兼容浏览器IE8+，最佳分辨率1280*800. <br>2018 @ SequoiaTech
         </div>
     </form>
 </div>

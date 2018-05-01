@@ -5,12 +5,12 @@
   Time: 22:09
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" %>
+<%@ page language="java" pageEncoding="UTF-8" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>SequoiaTech物料管理系统</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>SequoiaTech物料管理系统</title>
   <meta http-equiv="pragma" content="no-cache">
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">

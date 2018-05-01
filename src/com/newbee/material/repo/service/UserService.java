@@ -9,14 +9,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService implements IUserService {
 
-	// @Autowired
-	// private IUserDao userDao;
+	@Autowired
+	private IUserDao userDao;
 
 	@Override
 	public User getUser(String userName) {
-		User user = new User();
-		user.setUsername(userName);
-		user.setPassword("123456");
-		return user;
+		return userDao.getUser(userName);
 	}
 }

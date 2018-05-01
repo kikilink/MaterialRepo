@@ -30,4 +30,10 @@
 
     <!-- 启用支持annotation注解方式事务管理 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+        <!--<property name="basePackage" value="com.newbee.material.repo.dao" />-->
+        <!--&lt;!&ndash; optional unless there are multiple session factories defined &ndash;&gt;-->
+        <!--<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />-->
+    <!--</bean>-->
 </beans>
